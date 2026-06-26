@@ -1,0 +1,21 @@
+# Local Supabase CLI config. Run `supabase init` linkage with your own
+# project ref — this file only configures the local dev stack.
+project_id = "aeroscan"
+
+[api]
+enabled = true
+port = 54321
+
+[db]
+port = 54322
+
+[studio]
+enabled = true
+port = 54323
+
+[auth]
+enabled = true
+site_url = "aeroscan://"
+
+[edge_runtime]
+enabled = true
