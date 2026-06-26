@@ -2,6 +2,10 @@
 module.exports = {
   content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
   presets: [require('nativewind/preset')],
+  // AeroScan is dark-only (see app.json's userInterfaceStyle) — NativeWind
+  // needs manual ('class') dark-mode control for that to hold on web,
+  // rather than following the OS-level 'media' preference.
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
